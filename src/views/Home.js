@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div>Abrar </div>
+    <div className="text-emerald-500">Abrar</div>
   )
 }
