@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import NavbarPrimary from "./NavbarPrimary";
+// import NavbarPrimary from "./NavbarPrimary";
 
 import ExploreCard from "../ExploreCard";
 import FacilitiesCard from "../FacilitiesCard";
@@ -11,11 +11,10 @@ const Hero = ({ rightSection }) => {
     const [isSearch, setisSearch] = useState(false);
 
     return (
-        <div className="w-11/12 max-w-6xl mx-auto h-screen ">
-            {/*==========  Navbar ========== */}
-            <NavbarPrimary />
+        <>
+           
 
-            <div className="flex justify-evenly items-center flex-wrap">
+            <div className="flex justify-evenly items-center flex-wrap min-h-[calc(100vh-4rem)] ">
                 {/* Left Content Section  */}
                 <div className="w-7/12 ">
                     <div className="space-y-2 w-full">
@@ -57,7 +56,7 @@ const Hero = ({ rightSection }) => {
 
                 {rightSection}
             </div>
-        </div>
+        </>
     );
 };
 

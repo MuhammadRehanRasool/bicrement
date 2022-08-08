@@ -42,18 +42,30 @@ const LoginExplore = () => {
                     </h1>
                 </span>
             </div>
-            <div className="px-6 py-8 w-full">
+            <div className="px-6 py-8 w-full space-y-2">
                 <div className="space-y-3">
-                    <h1 className="text-xl text-dark">
-                        Phone Number or Username
-                    </h1>
+                    <h1 className="text-xl text-dark">What is your name?</h1>
                     <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
                         <input
                             type="text"
                             name=""
                             id=""
                             className="outline-none bg-transparent"
-                            placeholder="Example 8881414 or teentakle1212"
+                            placeholder="Example: Omprakash Makhija"
+                        />
+                    </div>
+                </div>
+                <div className="space-y-3">
+                    <h1 className="text-xl text-dark">
+                        What is your email id?
+                    </h1>
+                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
+                        <input
+                            type="password"
+                            name=""
+                            id=""
+                            className="outline-none bg-transparent"
+                            placeholder="Example: omi_flygoaway@amshanti.com"
                         />
                     </div>
                 </div>
@@ -65,14 +77,14 @@ const LoginExplore = () => {
                             name=""
                             id=""
                             className="outline-none bg-transparent"
-                            placeholder="Example ********"
+                            placeholder="Example: 8881212"
                         />
                     </div>
                 </div>
 
                 <div className="flex justify-end mt-8">
                     <button className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm">
-                        Enter
+                        <Link to="/otp-verify">Next</Link>
                     </button>
                 </div>
             </div>

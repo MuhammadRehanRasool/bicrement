@@ -5,6 +5,9 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./views/Home";
 import Layout from "./layout/Layout";
 import Login from "./views/Login";
+import Signup from "./views/Signup";
+import Otp from "./views/Otp";
+import Profile from "./views/Profile";
 
 function App() {
     return (
@@ -24,6 +27,30 @@ function App() {
                         element={
                             <Layout>
                                 <Login />
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/signup"
+                        element={
+                            <Layout>
+                                <Signup />
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/otp-verify"
+                        element={
+                            <Layout>
+                                <Otp/>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/set-profile"
+                        element={
+                            <Layout logo="true">
+                                <Profile/>
                             </Layout>
                         }
                     />
