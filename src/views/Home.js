@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/utils/Hero";
 
 export default function Home() {
-  return (
-    <div className="text-emerald-500">Abrar</div>
-  )
+    return (
+        <>
+            <Hero />
+        </>
+    );
 }

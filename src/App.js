@@ -6,22 +6,22 @@ import Home from "./views/Home";
 import Layout from "./layout/Layout";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Layout>
-                <Home />
-              </Layout>
-            }
-          />
-        </Routes>
-      </Router>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <Layout>
+                                <Home />
+                            </Layout>
+                        }
+                    />
+                </Routes>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

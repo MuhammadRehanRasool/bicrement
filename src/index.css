@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Reem+Kufi:regular,500,600,700);
+
+html{
+  font-family: 'Reem kufi', 'Helvet',sans-serif;
+}
+
+body{
+  @apply bg-gray-50
+}
