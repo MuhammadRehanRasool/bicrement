@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 import NavbarPrimary from "./NavbarPrimary";
 
 import ExploreCard from "../ExploreCard";
 import FacilitiesCard from "../FacilitiesCard";
 
-// Importing knowledge TreeImage
-import knowledgeTree from "../../Assets/images/knowledge-tree.png";
+import ExploreSearch from "../ExploreSearchs";
 
-const Hero = () => {
+const Hero = ({ rightSection }) => {
+    const [isSearch, setisSearch] = useState(false);
+
     return (
-        <div className="w-11/12 max-w-7xl mx-auto h-screen ">
+        <div className="w-11/12 max-w-6xl mx-auto h-screen ">
             {/*==========  Navbar ========== */}
             <NavbarPrimary />
 
-            <div className="flex justify-between items-center">
+            <div className="flex justify-evenly items-center flex-wrap">
                 {/* Left Content Section  */}
                 <div className="w-7/12 ">
-                    <div className="space-y-2">
+                    <div className="space-y-2 w-full">
                         <h1 className="text-7xl text-logo">
                             myfort.<span className="text-yellows-dark">io</span>
                         </h1>
@@ -37,31 +38,24 @@ const Hero = () => {
                             </span>{" "}
                         </p>
                     </div>
-                    <div className="flex justify-center items-center mt-5 space-x-10 h-[25rem] ">
+
+                    <div className="flex justify-center items-start mt-5 space-x-10 min-h-[25rem] ">
                         <FacilitiesCard />
-                        <ExploreCard />
+
+                        {isSearch ? (
+                            <ExploreSearch />
+                        ) : (
+                            <ExploreCard
+                                setisSearch={setisSearch}
+                                isSearch={isSearch}
+                            />
+                        )}
                     </div>
                 </div>
 
                 {/* RIght Content Section  */}
 
-                <div className="flex flex-col items-center">
-                    <div className="img">
-                        <img
-                            src={knowledgeTree}
-                            alt="knowledge tree"
-                            className="h-[30rem]"
-                        />
-                    </div>
-                    <div className="flex">
-                        <button className="bg-blues-button text-yellows-dark w-44 py-3 rounded-l-full rounded-tr-full">
-                            Log In
-                        </button>
-                        <button className="bg-blues-dark text-yellows-dark w-44 py-3 rounded-r-full rounded-tl-full">
-                            Explore
-                        </button>
-                    </div>
-                </div>
+                {rightSection}
             </div>
         </div>
     );
