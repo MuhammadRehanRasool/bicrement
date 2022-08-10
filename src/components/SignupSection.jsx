@@ -89,15 +89,17 @@ const LoginExplore = () => {
                 </div>
             </div>
 
-            <button
-                className="bg-blues-dark text-yellows-dark w-56 shadow-lg absolute  py-3 rounded-r-full rounded-bl-full"
+         
+            <Link
+                to="/search"
+                className="bg-blues-dark text-yellows-dark w-56 shadow-lg absolute  py-3 rounded-r-full rounded-bl-full text-center"
                 style={{
                     top: "100%",
                     left: "40%",
                 }}
             >
                 Explore
-            </button>
+            </Link>
         </div>
     );
 };

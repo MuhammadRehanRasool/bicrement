@@ -14,12 +14,19 @@ const LoginExplore = () => {
                 />
             </div>
             <div className="flex">
-                <button className="bg-blues-button text-yellows-dark w-44 py-3 rounded-l-full rounded-tr-full ">
-                    <Link to="/login"> Log In</Link>
-                </button>
-                <button className="bg-blues-dark text-yellows-dark w-44 py-3 rounded-r-full rounded-tl-full">
+                <Link
+                    to="/login"
+                    className="bg-blues-button text-yellows-dark w-44 py-3 rounded-l-full rounded-tr-full text-center"
+                >
+                    Log In
+                </Link>
+
+                <Link
+                    to="/search"
+                    className="bg-blues-dark text-yellows-dark w-44 py-3 rounded-r-full rounded-tl-full text-center"
+                >
                     Explore
-                </button>
+                </Link>
             </div>
         </div>
     );

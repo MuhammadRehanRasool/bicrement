@@ -1,7 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate } from "react-router-dom";
 
 const LoginExplore = () => {
+
+    const navigate = useNavigate();
+    const handleLogin = ( )=>{
+        // login
+
+        navigate('/dashboard')
+    }
     return (
         <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative">
             <div className="flex">
@@ -71,21 +78,22 @@ const LoginExplore = () => {
                 </div>
 
                 <div className="flex justify-end mt-8">
-                    <button className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm">
+                    <button className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm" onClick={()=>handleLogin()}>
                         Enter
                     </button>
                 </div>
             </div>
 
-            <button
-                className="bg-blues-dark text-yellows-dark w-56 shadow-lg absolute  py-3 rounded-r-full rounded-bl-full"
+            <Link
+                to="/search"
+                className="bg-blues-dark text-yellows-dark w-56 shadow-lg absolute  py-3 rounded-r-full rounded-bl-full text-center"
                 style={{
                     top: "100%",
                     left: "40%",
                 }}
             >
                 Explore
-            </button>
+            </Link>
         </div>
     );
 };

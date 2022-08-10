@@ -1,12 +1,16 @@
 import React from "react";
+import CoursesSection from "../components/Dashbaord/CoursesSection";
 import SideBar from "../components/Dashbaord/SideBar";
-
+import TopBar from "../components/Dashbaord/TopBar";
 
 const Dashboard = () => {
     return (
         <div className=" flex justify-between  min-h-[calc(100vh-4rem)] py-10">
-          
-          <SideBar/>
+            <SideBar />
+            <div className=" w-full px-6">
+              <TopBar/>
+              <CoursesSection/>
+            </div>
         </div>
     );
 };
