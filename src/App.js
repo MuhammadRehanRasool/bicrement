@@ -8,6 +8,9 @@ import Login from "./views/Login";
 import Signup from "./views/Signup";
 import Otp from "./views/Otp";
 import Profile from "./views/Profile";
+import WelcomeLogin from "./views/WelcomeLogin";
+import Dashboard from "./views/Dashboard";
+import Search from "./views/Search";
 
 function App() {
     return (
@@ -51,6 +54,30 @@ function App() {
                         element={
                             <Layout logo="true">
                                 <Profile/>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/welcome-login"
+                        element={
+                            <Layout logo="true">
+                                <WelcomeLogin/>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/Dashboard"
+                        element={
+                            <Layout logo="true">
+                                <Dashboard/>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/Search"
+                        element={
+                            <Layout >
+                                <Search/>
                             </Layout>
                         }
                     />

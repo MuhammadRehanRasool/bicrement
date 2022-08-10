@@ -64,7 +64,7 @@ const Profile = () => {
                                     </h1>
                                     <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2  mx-auto">
                                         <input
-                                            type="password"
+                                            type="text"
                                             name=""
                                             id=""
                                             className="outline-none bg-transparent"
@@ -136,7 +136,7 @@ const Profile = () => {
                                     </h1>
                                     <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2  mx-auto">
                                         <input
-                                            type="password"
+                                            type="text"
                                             name=""
                                             id=""
                                             className="outline-none bg-transparent"
@@ -181,7 +181,7 @@ const Profile = () => {
                         </div>
                     </div>
                     <button className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm float-right">
-                        <Link to="/otp-verify">Next</Link>
+                        <Link to="/welcome-login">Next</Link>
                     </button>
                 </div>
             </div>
