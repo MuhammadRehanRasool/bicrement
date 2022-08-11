@@ -21,7 +21,15 @@ input{
   display: none;
 }
 
+.coursesOutline::-webkit-scrollbar{
+  display: none;
+}
+
 .searches {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.coursesOutline {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }

@@ -8,7 +8,7 @@ import icon_5 from "../../Assets/icons/connections-svgrepo-com.svg";
 const SideBar = () => {
     return (
         <>
-            <div className="w-3/12 shadow rounded-3xl p-4 ">
+            <div className="w-3/12 shadow rounded-3xl p-4 sti">
                 <div className="h-5/12 flex items-center">
                     <div className="w-5/12 space-y-2">
                         <button className="border border-grays-light w-full  bg-gradient-to-r from-yellows-light to-yellows-dark rounded-full shadow bg-transparent  px-3 py-2 text-content space-x-2 mx-auto text-center text-sm">

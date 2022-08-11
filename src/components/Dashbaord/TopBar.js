@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import timeTable from "../../Assets/images/overview.png";
+
 import { IoIosSearch } from "react-icons/io";
+import Notification from "./Notification";
+import TimeTable from "./TimeTable";
 
 const TopBar = () => {
     const [isSearch, setisSearch] = useState(false);
@@ -53,35 +55,10 @@ const TopBar = () => {
             </div>
 
             <div className="w-2/6 bg-gray-50  h-full">
-                <img src={timeTable} alt="" className="w-full h-full" />
+               <TimeTable/>
             </div>
-            <div className="w-2/6 bg-gray-100  h-ful rounded-3xl shadow-md p-3">
-                <div className="textc-center">
-                    {" "}
-                    <span className="bg-gray-200 p-1 text-xs  text-center">
-                        You have 9 new notification
-                    </span>
-                </div>
-                <div className=" py-4 px-6 space-y-2">
-                    <div className="flex text-xs w-full space-x-4 text-content">
-                        <span>12:25</span>
-                        <p className="pb-4 border-b border-b-gray-400 flex-grow">
-                            Dr. Bulla's Class
-                        </p>
-                    </div>
-                    <div className="flex text-xs w-full space-x-4 text-content">
-                        <span>12:25</span>
-                        <p className="pb-4 border-b border-b-gray-400 flex-grow">
-                            Dr. Bulla's Class
-                        </p>
-                    </div>
-                    <div className="flex text-xs w-full space-x-4 text-content">
-                        <span>12:25</span>
-                        <p className="pb-4 border-b border-b-gray-400 flex-grow">
-                            Dr. Bulla's Class
-                        </p>
-                    </div>
-                </div>
+            <div className="w-2/6">
+                <Notification />
             </div>
         </div>
     );

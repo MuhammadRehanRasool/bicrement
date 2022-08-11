@@ -11,6 +11,7 @@ import Profile from "./views/Profile";
 import WelcomeLogin from "./views/WelcomeLogin";
 import Dashboard from "./views/Dashboard";
 import Search from "./views/Search";
+import Courses from "./views/Courses";
 
 function App() {
     return (
@@ -78,6 +79,14 @@ function App() {
                         element={
                             <Layout >
                                 <Search/>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/Courses"
+                        element={
+                            <Layout >
+                                <Courses/>
                             </Layout>
                         }
                     />

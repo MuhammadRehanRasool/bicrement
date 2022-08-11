@@ -5,7 +5,7 @@ import TopBar from "../components/Dashbaord/TopBar";
 
 const Dashboard = () => {
     return (
-        <div className=" flex justify-between  min-h-[calc(100vh-4rem)] py-10">
+        <div className=" flex justify-between   max-h-fit py-10">
             <SideBar />
             <div className=" w-full px-6">
               <TopBar/>
