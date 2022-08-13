@@ -34,10 +34,10 @@ const Profile = () => {
 
     return (
         <div className=" flex justify-between items-center min-h-[calc(100vh-4rem)]">
-            <div className="bg-gray-100 rounded-md shadow-lg flex justify-between p-12 ">
+            <div className="bg-gray-100 rounded-md shadow-lg flex flex-col md:flex-row justify-between p-12 ">
                 {/* Left  */}
-                <div className="w-7/12 ">
-                    <div className=" h-12 relative">
+                <div className="md:w-7/12 ">
+                    <div className=" h-12 relative ">
                         <span className="relative   left-32">
                             ..
                             <h1
@@ -60,9 +60,9 @@ const Profile = () => {
                         </span>
                     </div>
 
-                    <div className="flex justify-around">
+                    <div className="flex flex-col md:flex-row justify-around">
                         {/* Singup Info */}
-                        <div className="w-96">
+                        <div className="md:w-96">
                             <div className="px-6 py-8 w-full space-y-3 text-center">
                                 <div className="space-y-3 ">
                                     <h1 className="text-lg text-content">
@@ -128,7 +128,7 @@ const Profile = () => {
 
                         {/* Account Info */}
 
-                        <div className="w-96 -mt-6">
+                        <div className="md:w-96 -mt-6">
                             <div className="px-6 py-8 w-full space-y-3 text-center">
                                 <div className="space-y-3 ">
                                     <h1 className="text-lg text-content">
@@ -198,8 +198,8 @@ const Profile = () => {
 
                 {/* Right  */}
 
-                <div className="w-4/12 text-center border-l-4">
-                    <div className="p-16 ">
+                <div className="md:w-4/12 text-center md:border-l-4">
+                    <div className="md:p-16 ">
                         <h1 className="text-lg text-content mb-5">
                             Select your avatar:
                         </h1>
@@ -213,7 +213,7 @@ const Profile = () => {
                             })}
                         </div>
                     </div>
-                    <button onClick={()=>handleSubmit()} className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm float-right">
+                    <button onClick={()=>handleSubmit()} className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm float-right mt-10 md:mt-0">
                         Next
                     </button>
                 </div>

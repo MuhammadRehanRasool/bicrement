@@ -59,7 +59,7 @@ const LoginExplore = () => {
                     <h1 className="text-xl text-dark">
                         Phone Number or Username
                     </h1>
-                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
+                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12">
                         <input
                             type="text"
                             name=""
@@ -73,7 +73,7 @@ const LoginExplore = () => {
                 </div>
                 <div className="space-y-3 mt-5">
                     <h1 className="text-xl text-dark">Pasword</h1>
-                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
+                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12">
                         <input
                             type="password"
                             name=""

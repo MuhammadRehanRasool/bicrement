@@ -17,7 +17,7 @@ const LoginExplore = () => {
     }
 
     return (
-        <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative">
+        <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative mt-10 md:mt-0 text-center md:text-left">
             <div className="flex">
                 <Link
                     to="/login"
@@ -59,12 +59,12 @@ const LoginExplore = () => {
             <div className="px-6 py-8 w-full space-y-2">
                 <div className="space-y-3">
                     <h1 className="text-xl text-dark">What is your name?</h1>
-                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
+                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12">
                         <input
                             type="text"
                             name=""
                             id=""
-                            className="outline-none bg-transparent"
+                            className="outline-none bg-transparent "
                             placeholder="Example: Omprakash Makhija"
                             value = {form.name}
                             onChange={(e) => {setform({...form,name: e.target.value})}}
@@ -77,7 +77,7 @@ const LoginExplore = () => {
                     <h1 className="text-xl text-dark">
                         What is your email id?
                     </h1>
-                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
+                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12">
                         <input
                             type="email"
                             name=""
@@ -92,7 +92,7 @@ const LoginExplore = () => {
                 </div>
                 <div className="space-y-3 mt-5">
                     <h1 className="text-xl text-dark">Pasword</h1>
-                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
+                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12">
                         <input
                             type="password"
                             name=""

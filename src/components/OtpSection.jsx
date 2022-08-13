@@ -25,7 +25,7 @@ const OtpSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative">
+    <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative  mt-10 md:mt-0">
       <div className="flex">
         <Link
           to="/login"
@@ -69,7 +69,7 @@ const OtpSection = () => {
         <div className="px-6 py-10 w-full text-center ">
           <div className="space-y-3">
             <h1 className="text-lg text-dark">Enter OTP</h1>
-            <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12 mx-auto">
+            <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12 mx-auto">
               <input
                 type="text"
                 name=""
