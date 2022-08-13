@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link ,useNavigate } from "react-router-dom";
 
 const LoginExplore = () => {
+
+    const [form, setform] = useState({
+        name:'',
+        password:''
+    })
 
     const navigate = useNavigate();
     const handleLogin = ( )=>{
@@ -61,6 +66,8 @@ const LoginExplore = () => {
                             id=""
                             className="outline-none bg-transparent"
                             placeholder="Example 8881414 or teentakle1212"
+                            value = {form.name}
+                            onChange={(e) => {setform({...form,name: e.target.value})}}
                         />
                     </div>
                 </div>
@@ -73,6 +80,8 @@ const LoginExplore = () => {
                             id=""
                             className="outline-none bg-transparent"
                             placeholder="Example ********"
+                            value = {form.password}
+                            onChange={(e) => {setform({...form,password: e.target.value})}}
                         />
                     </div>
                 </div>

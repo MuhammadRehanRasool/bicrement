@@ -1,7 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginExplore = () => {
+
+    const [form, setform] = useState({
+        name:'',
+        password:'',
+        email:''
+    })
+
+    const navigate = useNavigate();
+    const handleSubmit = ( )=>{
+        // login
+
+        navigate('/otp-verify')
+    }
+
     return (
         <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative">
             <div className="flex">
@@ -52,6 +66,10 @@ const LoginExplore = () => {
                             id=""
                             className="outline-none bg-transparent"
                             placeholder="Example: Omprakash Makhija"
+                            value = {form.name}
+                            onChange={(e) => {setform({...form,name: e.target.value})}}
+
+
                         />
                     </div>
                 </div>
@@ -61,11 +79,14 @@ const LoginExplore = () => {
                     </h1>
                     <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 w-9/12">
                         <input
-                            type="password"
+                            type="email"
                             name=""
                             id=""
                             className="outline-none bg-transparent"
                             placeholder="Example: omi_flygoaway@amshanti.com"
+                            value = {form.email}
+                            onChange={(e) => {setform({...form,email: e.target.value})}}
+
                         />
                     </div>
                 </div>
@@ -78,6 +99,11 @@ const LoginExplore = () => {
                             id=""
                             className="outline-none bg-transparent"
                             placeholder="Example: 8881212"
+                            password
+                            value = {form.password}
+                            onChange={(e) => {setform({...form,password: e.target.value})}}
+
+
                         />
                     </div>
                 </div>
@@ -90,8 +116,8 @@ const LoginExplore = () => {
             </div>
 
          
-            <Link
-                to="/search"
+            <button
+                onClick={()=>{handleSubmit()}}
                 className="bg-blues-dark text-yellows-dark w-56 shadow-lg absolute  py-3 rounded-r-full rounded-bl-full text-center"
                 style={{
                     top: "100%",
@@ -99,7 +125,7 @@ const LoginExplore = () => {
                 }}
             >
                 Explore
-            </Link>
+            </button>
         </div>
     );
 };

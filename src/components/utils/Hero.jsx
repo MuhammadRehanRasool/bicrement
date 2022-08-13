@@ -16,7 +16,7 @@ const Hero = ({ rightSection }) => {
 
             <div className="flex justify-evenly items-center flex-wrap min-h-[calc(100vh-4rem)] ">
                 {/* Left Content Section  */}
-                <div className="w-7/12 ">
+                <div className="md:w-7/12 ">
                     <div className="space-y-2 w-full">
                         <h1 className="text-7xl text-logo">
                             myfort.<span className="text-yellows-dark">io</span>
@@ -38,7 +38,7 @@ const Hero = ({ rightSection }) => {
                         </p>
                     </div>
 
-                    <div className="flex justify-center items-start mt-5 space-x-10 min-h-[25rem] ">
+                    <div className="flex justify-center flex-wrap items-start mt-5 space-x-10 min-h-[25rem] space-y-8 md:space-y-0">
                         <FacilitiesCard />
 
                         {isSearch ? (

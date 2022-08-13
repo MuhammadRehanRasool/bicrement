@@ -12,7 +12,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const FacilitiesCard = () => {
     return (
-        <div className="shadow-md rounded-xl md p-5 w-72 h-full">
+        <div className="shadow-md rounded-xl md p-5 w-full md:w-72 h-full">
             {/* All Cards */}
             {cardsData.map((card) => {
                 return (

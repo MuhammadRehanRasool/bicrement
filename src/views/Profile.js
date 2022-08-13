@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import avatar_1 from "../Assets/avatars/avatar-1.svg";
 import avatar_2 from "../Assets/avatars/avatar-2.svg";
@@ -12,6 +12,26 @@ import avatar_8 from "../Assets/avatars/avatar-8.svg";
 import avatar_9 from "../Assets/avatars/avatar-9.svg";
 
 const Profile = () => {
+
+    const [form, setform] = useState({
+        name:'',
+        email: '',
+        username:'',
+        password:'',
+        number:'',
+        dateOfBirth:'',
+        education:''
+
+    })
+    let navigate = useNavigate();
+
+    const handleSubmit = () => {
+        // Logic
+    
+        // setisOtpSend(true);
+        navigate("/welcome-login");
+      };
+
     return (
         <div className=" flex justify-between items-center min-h-[calc(100vh-4rem)]">
             <div className="bg-gray-100 rounded-md shadow-lg flex justify-between p-12 ">
@@ -55,6 +75,9 @@ const Profile = () => {
                                             id=""
                                             className="outline-none bg-transparent"
                                             placeholder=""
+                                            value = {form.name}
+                                             onChange={(e) => {setform({...form,name: e.target.value})}}
+
                                         />
                                     </div>
                                 </div>
@@ -69,6 +92,8 @@ const Profile = () => {
                                             id=""
                                             className="outline-none bg-transparent"
                                             placeholder=""
+                                            value = {form.email}
+                                             onChange={(e) => {setform({...form,email: e.target.value})}}
                                         />
                                     </div>
                                 </div>
@@ -83,6 +108,8 @@ const Profile = () => {
                                             id=""
                                             className="outline-none bg-transparent"
                                             placeholder=""
+                                            value = {form.username}
+                                             onChange={(e) => {setform({...form,username: e.target.value})}}
                                         />
                                     </div>
                                 </div>
@@ -127,6 +154,8 @@ const Profile = () => {
                                             id=""
                                             className="outline-none bg-transparent "
                                             placeholder=""
+                                            value = {form.number}
+                                             onChange={(e) => {setform({...form,number: e.target.value})}}
                                         />
                                     </div>
                                 </div>
@@ -141,6 +170,8 @@ const Profile = () => {
                                             id=""
                                             className="outline-none bg-transparent"
                                             placeholder=""
+                                            value = {form.dateOfBirth}
+                                             onChange={(e) => {setform({...form,dateOfBirth: e.target.value})}}
                                         />
                                     </div>
                                 </div>
@@ -155,6 +186,8 @@ const Profile = () => {
                                             id=""
                                             className="outline-none bg-transparent"
                                             placeholder=""
+                                            value = {form.education}
+                                             onChange={(e) => {setform({...form,education: e.target.value})}}
                                         />
                                     </div>
                                 </div>
@@ -180,8 +213,8 @@ const Profile = () => {
                             })}
                         </div>
                     </div>
-                    <button className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm float-right">
-                        <Link to="/welcome-login">Next</Link>
+                    <button onClick={()=>handleSubmit()} className="bg-yellows-light text-white w-24 py-1 rounded-full text-sm float-right">
+                        Next
                     </button>
                 </div>
             </div>
