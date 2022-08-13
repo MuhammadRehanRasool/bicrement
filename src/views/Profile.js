@@ -34,7 +34,7 @@ const Profile = () => {
 
     return (
         <div className=" flex justify-between items-center min-h-[calc(100vh-4rem)]">
-            <div className="bg-gray-100 rounded-md shadow-lg flex flex-col md:flex-row justify-between p-12 ">
+            <div className="bg-gray-100 rounded-md shadow-lg flex flex-col md:flex-row justify-between p-5 md:p-12 ">
                 {/* Left  */}
                 <div className="md:w-7/12 ">
                     <div className=" h-12 relative ">
@@ -60,15 +60,15 @@ const Profile = () => {
                         </span>
                     </div>
 
-                    <div className="flex flex-col md:flex-row justify-around">
+                    <div className="flex flex-col md:flex-row justify-around space-y-5 md:space-y-0">
                         {/* Singup Info */}
-                        <div className="md:w-96">
+                        <div className="w-full md:w-96 ">
                             <div className="px-6 py-8 w-full space-y-3 text-center">
                                 <div className="space-y-3 ">
                                     <h1 className="text-lg text-content">
                                         What is your name?
                                     </h1>
-                                    <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 mx-auto">
+                                    <div className="border  border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 mx-auto ">
                                         <input
                                             type="text"
                                             name=""
@@ -134,7 +134,7 @@ const Profile = () => {
                                     <h1 className="text-lg text-content">
                                         Select a profiile type:
                                     </h1>
-                                    <div className="space-x-4">
+                                    <div className="md:space-x-4">
                                         <button className="border border-grays-light w-24 bg-gradient-to-r from-yellows-light to-yellows-dark rounded-full shadow bg-transparent  px-3 py-3 text-content space-x-2 mx-auto text-center text-sm">
                                             Student
                                         </button>
