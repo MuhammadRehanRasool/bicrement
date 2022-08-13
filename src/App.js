@@ -12,6 +12,8 @@ import WelcomeLogin from "./views/WelcomeLogin";
 import Dashboard from "./views/Dashboard";
 import Search from "./views/Search";
 import Courses from "./views/Courses";
+import CourseOutlineWrapper from "./components/Dashbaord/CourseOutlineWrapper";
+import PostCommentWrapper from "./components/Dashbaord/PostCommentWrapper";
 
 function App() {
     return (
@@ -86,7 +88,19 @@ function App() {
                         path="/Courses"
                         element={
                             <Layout >
-                                <Courses/>
+                                <Courses>
+                                    <CourseOutlineWrapper/>
+                                </Courses>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/comments"
+                        element={
+                            <Layout >
+                                <Courses>
+                                    <PostCommentWrapper/>
+                                </Courses>
                             </Layout>
                         }
                     />

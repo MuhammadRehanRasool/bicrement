@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import pencils from "../../Assets/icons/pencils-draw-svgrepo-com.png";
-import post from "../../Assets/icons/conference-svgrepo-com.svg";
+
 
 import { IoIosSearch } from "react-icons/io";
-import CourseOutline from "./CourseOutline";
 
-const CoursesSearchBar = () => {
+import PostComentBtn from "./PostComentBtn";
+
+const CoursesSearchBar = ({children}) => {
     const [isSearch, setisSearch] = useState(false);
     const handleSearch = () => {
         console.log("im clicked");
@@ -56,25 +57,13 @@ const CoursesSearchBar = () => {
                     </div>
 
                     {/* Post & Comment */}
-                    <div className=" flex flex-col justify-between items-center w-1/5">
-                        <img src={post} className="w-8" alt="" />
-                        <p className="text-xs text-grays-light">
-                            Post & Comments
-                        </p>
-                    </div>
+                    <PostComentBtn/>
                 </div>
             </div>
 
 
-            <div className="bg-gray-100 rounded-r-[3.5rem] rounded-bl-[3.5rem] p-5 mt-4 h-96 overflow-x-scroll coursesOutline" >
-            <CourseOutline />
-            <CourseOutline />
-            <CourseOutline />
-            <CourseOutline />
-            <CourseOutline />
-            <CourseOutline />
-            <CourseOutline />
-            </div>
+           {children}
+
 
             {/* <div className="flex justify-between items-center flex-col mt-5">
                 <div className=" rounded-r-lg rounded-b-lg bg-gray-100 p-7">
