@@ -15,7 +15,7 @@ const LoginExplore = () => {
         navigate('/dashboard')
     }
     return (
-        <div className="flex flex-col items-center shadow-lg  rounded-b-2xl relative">
+        <div className="flex flex-col items-center shadow-lg  rounded-b-2xl mt-10 md:mt-0 relative">
             <div className="flex">
                 <Link
                     to="/login"
@@ -54,7 +54,7 @@ const LoginExplore = () => {
                     </h1>
                 </span>
             </div>
-            <div className="px-6 py-8 w-full">
+            <div className="px-6 py-8 w-full text-center md:text-left">
                 <div className="space-y-3">
                     <h1 className="text-xl text-dark">
                         Phone Number or Username

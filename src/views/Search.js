@@ -49,7 +49,7 @@ const Search = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between md:flex-wrap gap-8 md:px-16 md:overflow-y-scroll py-8 searches">
+            <div className="flex flex-col md:flex-row justify-between md:flex-wrap gap-8 px-5 md:px-16 md:overflow-y-scroll py-8 searches">
                 {contents.map((content) => {
                     return (
                         <div className="w-full md:w-[32rem] flex md:justify-between space-x-10 content">
