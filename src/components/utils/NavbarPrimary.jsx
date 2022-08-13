@@ -16,7 +16,7 @@ const NavbarPrimary = (props) => {
                 <Link to="#">
                     <span className="text-logo">About us</span>
                 </Link>
-                <Link to="#">
+                <Link to="/Contact">
                     <span className="text-logo">Contact us</span>
                 </Link>
             </div>

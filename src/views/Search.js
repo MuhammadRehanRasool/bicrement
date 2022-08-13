@@ -1,25 +1,32 @@
 import React, { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import icon_1 from "../Assets/icons/pencils-draw-svgrepo-com.png";
 import icon_2 from "../Assets/icons/test-tube.png";
 import icon_3 from "../Assets/icons/violin-svgrepo-com.png";
 import icon_4 from "../Assets/icons/ballet-svgrepo-com.png";
 
-
+import {AiOutlineClose} from 'react-icons/ai'
 const Search = () => {
     const handleSearch = () => {
         console.log("im clicked");
     };
+    const navigate = useNavigate();
+ 
 
+    const handleRoute = () => {
+      navigate(-1);
+    }
   
 
     const [isSearch, setisSearch] = useState(false);
     return (
         <div className="flex flex-col items-start justify-between shadow-lg  rounded-b-2xl relative h-[33rem] xl:h-[calc(100vh-10rem)]">
-            <div className="px-6 py-8 w-full h-44">
-                <div className="space-y-3">
+            <div className="px-6 py-8 w-full h-44 flex justify-between " >
+
+            
+                <div className="space-y-3 w-11/12">
                     <div
                         className="border border-grays-light rounded-full w-6/12 shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2"
                         onClick={() => setisSearch(true)}
@@ -34,6 +41,11 @@ const Search = () => {
                         />
                         <IoIosSearch />
                     </div>
+                </div>
+
+
+                <div onClick={() => handleRoute()} className="text-center cursor-pointer">
+                <AiOutlineClose  className="text-2xl text-grays-light"/>
                 </div>
             </div>
 

@@ -14,6 +14,7 @@ import Search from "./views/Search";
 import Courses from "./views/Courses";
 import CourseOutlineWrapper from "./components/Dashbaord/CourseOutlineWrapper";
 import PostCommentWrapper from "./components/Dashbaord/PostCommentWrapper";
+import ContactUs from "./views/ContactUs";
 
 function App() {
     return (
@@ -101,6 +102,15 @@ function App() {
                                 <Courses>
                                     <PostCommentWrapper/>
                                 </Courses>
+                            </Layout>
+                        }
+                    />
+                    <Route
+                        path="/Contact"
+                        element={
+                            <Layout >
+                                <ContactUs/>
+                                    
                             </Layout>
                         }
                     />
