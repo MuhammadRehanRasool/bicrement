@@ -38,7 +38,7 @@ const Hero = ({ rightSection }) => {
                         </p>
                     </div>
 
-                    <div className="flex justify-center flex-wrap items-start mt-5 space-x-10 min-h-[25rem] space-y-8 md:space-y-0">
+                    <div className="flex justify-center flex-wrap items-start mt-5 md:space-x-10 min-h-[25rem] space-y-8 md:space-y-0">
                         <FacilitiesCard />
 
                         {isSearch ? (

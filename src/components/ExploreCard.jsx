@@ -9,7 +9,7 @@ const ExploreCard = ({setisSearch,isSearch}) => {
         console.log("im clicked")
     }
     return (
-        <div className="shadow-md rounded-xl flex flex-col items-center justify-center p-5 w-72 space-y-5 h-full">
+        <div className="shadow-md rounded-xl flex flex-col items-center justify-center p-5 w-full md:w-72 space-y-5 h-full">
             <div className="img">
                 <img src={laptopPerson} alt="" className="h-52" />
             </div>

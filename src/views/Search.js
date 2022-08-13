@@ -22,13 +22,13 @@ const Search = () => {
 
     const [isSearch, setisSearch] = useState(false);
     return (
-        <div className="flex flex-col items-start justify-between shadow-lg  rounded-b-2xl relative h-[33rem] xl:h-[calc(100vh-10rem)]">
-            <div className="px-6 py-8 w-full h-44 flex justify-between " >
+        <div className="flex flex-col items-start justify-between shadow-lg  rounded-b-2xl relative md:h-[33rem] xl:h-[calc(100vh-10rem)]">
+            <div className="px-6 py-8 w-full md:h-44 flex justify-between items-center" >
 
             
                 <div className="space-y-3 w-11/12">
                     <div
-                        className="border border-grays-light rounded-full w-6/12 shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2"
+                        className="border border-grays-light rounded-full w-full md:w-6/12 shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2"
                         onClick={() => setisSearch(true)}
                     >
                         <input
@@ -49,12 +49,12 @@ const Search = () => {
                 </div>
             </div>
 
-            <div className="flex justify-between flex-wrap gap-8 px-16 overflow-y-scroll py-8 searches">
+            <div className="flex flex-col md:flex-row justify-between md:flex-wrap gap-8 md:px-16 md:overflow-y-scroll py-8 searches">
                 {contents.map((content) => {
                     return (
-                        <div className="w-[32rem] flex justify-between space-x-10 content">
-                            <img src={content.icon} alt="" className="h-10" />
-                            <p className="w-2 h-full bg-grays-light"></p>
+                        <div className="w-full md:w-[32rem] flex md:justify-between space-x-10 content">
+                            <img src={content.icon} alt="" className=" w-8 md:w-auto h-8 md:h-10" />
+                            <p className="w-2 h-full bg-grays-light hidden md:block"></p>
                             <div className="">
                                 <p className="text-content sm">
                                     {content.text}
