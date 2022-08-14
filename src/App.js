@@ -20,7 +20,6 @@ import Courses from "./views/Courses";
 import CourseOutlineWrapper from "./components/Dashbaord/CourseOutlineWrapper";
 import PostCommentWrapper from "./components/Dashbaord/PostCommentWrapper";
 import ContactUs from "./views/ContactUs";
-;
 
 function App() {
 

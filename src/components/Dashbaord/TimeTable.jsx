@@ -1,7 +1,19 @@
 import React from "react";
-import timeTable from "../../Assets/images/overview.png";
+import FullCalendar from "@fullcalendar/react"; // must go before plugins
+import timeGridPlugin from "@fullcalendar/timegrid";
 const TimeTable = () => {
-    return <img src={timeTable} alt="" className="w-full h-full" />;
+  return (
+    <FullCalendar
+      plugins={[timeGridPlugin]}
+      initialView="timeGridWeek"
+      slotLabelFormat={{
+        hour: "numeric",
+        minute: "2-digit",
+        omitZeroMinute: true,
+        meridiem: "short",
+      }}
+    />
+  );
 };
 
 export default TimeTable;

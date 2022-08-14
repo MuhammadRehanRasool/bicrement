@@ -1,0 +1,22 @@
+.fc .fc-col-header-cell-cushion {
+  font-size: 0.5rem !important;
+}
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+  font-size: 0.8rem !important;
+}
+.fc .fc-toolbar-title {
+  font-size: 0.7rem !important;
+}
+.fc .fc-button-primary {
+  font-size: 0.5rem !important;
+}
+.fc-toolbar-chunk {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.fc-scroller{
+    overflow-x: auto!important;
+    overflow-y: auto!important;
+}
