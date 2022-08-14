@@ -20,7 +20,7 @@ const WelcomeLogin = () => {
       <div className="bg-gray-100 rounded-md shadow-lg p-6 md:p-12 w-full md:h-[32rem]">
         {/* Left  */}
         <div className=" h-12 relative">
-          <span className="relative   left-32">
+          <span className="relative   left-32 text-transparent" >
             ..
             <h1
               className="text-4xl  text-greens-light absolute opacity-75 font-normal"

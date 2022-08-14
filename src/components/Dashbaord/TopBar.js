@@ -54,7 +54,7 @@ const TopBar = () => {
                 </div>
             </div>
 
-            <div className="md:w-2/6 bg-gray-50  h-full">
+            <div className="md:w-2/6 bg-gray-50  h-full overflow-hidden">
                <TimeTable/>
             </div>
             <div className="md:w-2/6">

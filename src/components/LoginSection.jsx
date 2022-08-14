@@ -31,8 +31,8 @@ const LoginExplore = () => {
         </Link>
       </div>
 
-      <div className="bg-gray-50 h-12 relative">
-        <span className="relative   ">
+      <div className=" h-12 relative">
+        <span className="relative   text-transparent bg-transparent">
           ..
           <h1
             className="text-4xl  text-greens-light mb-4 absolute opacity-75 font-normal"

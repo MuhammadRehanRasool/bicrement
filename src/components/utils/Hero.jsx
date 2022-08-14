@@ -18,14 +18,15 @@ const Hero = ({ rightSection }) => {
         animate={{ opacity: 1 ,scale:1}}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6}}
+        
       >
         {/* Left Content Section  */}
         <div className="md:w-7/12 ">
           <div className="space-y-2 w-full">
-            <h1 className="text-7xl text-logo">
+            <h1 className="text-7xl text-logo drop-shadow-xl">
               myfort.<span className="text-yellows-dark">io</span>
             </h1>
-            <p className="text-2xl">
+            <p className="text-2xl drop-shadow-lg">
               {" "}
               <span className="text-yellows-light">India's </span>{" "}
               <span className="text-logo">fastest growing </span>{" "}

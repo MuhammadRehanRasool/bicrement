@@ -4,12 +4,20 @@
 
 @import url(https://fonts.googleapis.com/css?family=Reem+Kufi:regular,500,600,700);
 
+
 html{
   font-family: 'Reem kufi', 'Helvet',sans-serif;
 }
 
 body{
-  @apply bg-gray-50
+  /* @apply bg-gray-50; */
+
+  background:url('./Assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 input{

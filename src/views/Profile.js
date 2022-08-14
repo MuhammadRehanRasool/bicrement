@@ -42,7 +42,7 @@ const Profile = () => {
         {/* Left  */}
         <div className="md:w-7/12 ">
           <div className=" h-12 relative ">
-            <span className="relative   left-32">
+            <span className="relative   left-32 text-transparent">
               ..
               <h1
                 className="text-4xl  text-greens-light mb-4 absolute opacity-75 font-normal"
