@@ -11,8 +11,8 @@ const TopBar = () => {
     };
 
     return (
-        <div className="h-[14rem] flex  justify-between  space-x-4 ">
-            <div className="w-3/6 space-y-2">
+        <div className="md:h-[14rem] flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-4 ">
+            <div className="md:w-3/6 space-y-2">
                 <div className="bg-gradient-to-br from-[#102f3ebd] to-[#2a566ec7] rounded-r-[3.5rem] rounded-tl-[3.5rem] p-8 flex flex-col items-center justify-between text-white h-4/5">
                     <p className="text-right text-xs w-full">
                         December 16 ,2022
@@ -54,10 +54,10 @@ const TopBar = () => {
                 </div>
             </div>
 
-            <div className="w-2/6 bg-gray-50  h-full">
+            <div className="md:w-2/6 bg-gray-50  h-full">
                <TimeTable/>
             </div>
-            <div className="w-2/6">
+            <div className="md:w-2/6">
                 <Notification />
             </div>
         </div>

@@ -8,9 +8,9 @@ import icon_5 from "../../Assets/icons/connections-svgrepo-com.svg";
 const SideBar = () => {
     return (
         <>
-            <div className="w-3/12 shadow rounded-3xl p-4 sti">
+            <div className="hidden md:block md:w-3/12 shadow rounded-3xl p-4 bg-sky-50">
                 <div className="h-5/12 flex items-center">
-                    <div className="w-5/12 space-y-2">
+                    <div className="md:w-5/12 space-y-2">
                         <button className="border border-grays-light w-full  bg-gradient-to-r from-yellows-light to-yellows-dark rounded-full shadow bg-transparent  px-3 py-2 text-content space-x-2 mx-auto text-center text-sm">
                             Student
                         </button>
@@ -21,7 +21,7 @@ const SideBar = () => {
                             Mithun
                         </button>
                     </div>
-                    <div className="w-6/12">
+                    <div className="md:w-6/12">
                         <div className="text-center">
                             <div className="w-24 hover:animate-pulse cursor-pointer transition ease-in-out delay-150 mx-auto">
                                 <img src={avatar} alt="" className="mx-ato" />{" "}

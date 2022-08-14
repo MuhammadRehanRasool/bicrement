@@ -17,14 +17,14 @@ const CourseOutline = () => {
   );
 
   return (
-    <div className="mt-1">
+    <div className="mb-8 md:mt-1 md:mb-0">
       <div className="flex items-center justify-between">
         <h1 className="text-xs w-auto text-content">Section 1: Introduction </h1>{" "}
         <ColoredLine />
       </div>
       {/* Three */}
-      <div className="flex items-center justify-around py-2 space-x-5">
-        <div className="border  w-[20%] rounded-[2.5rem]  shadow-inner flex flex-col justify-evenly items-center  p-3">
+      <div className="flex flex-col  md:flex-row items-center justify-around py-2 space-y-3 md:space-y-0 md:space-x-5">
+        <div className="border w-full md:w-[20%] rounded-[2.5rem]  shadow-inner flex flex-col justify-evenly items-center  p-3">
           <img
             src={playBtn}
             className="w-6"
@@ -32,7 +32,7 @@ const CourseOutline = () => {
           />
           <p className="text-xs text-blues-light mt-2">Introduction</p>
         </div>
-        <div className="border  w-2/6  rounded-[2.5rem]  shadow-inner flex flex-col justify-evenly items-center  p-3">
+        <div className="border w-full md:w-2/6  rounded-[2.5rem]  shadow-inner flex flex-col justify-evenly items-center  p-3">
           <img
              src={playBtn}
             className="w-6"
@@ -40,7 +40,7 @@ const CourseOutline = () => {
           />
           <p className="text-xs text-blues-light mt-2">Find a good driver</p>
         </div>
-        <div className="border  w-3/6  rounded-[2.5rem]  shadow-inner flex flex-row justify-evenly items-center  p-3">
+        <div className="border w-full md:w-3/6  rounded-[2.5rem]  shadow-inner flex flex-row justify-evenly items-center  p-3">
           <div className='flex flex-col items-center'>
             <img
               src={assignments}
