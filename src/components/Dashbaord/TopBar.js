@@ -36,7 +36,7 @@ const TopBar = () => {
                     onClick={() => setisSearch(true)}
                 >
                     <button
-                        className="bg-yellows-light shadow-sm   text-content w-44 py-1 rounded-bl-full rounded-r-full text-sm h-full scale-105"
+                        className="bg-yellows-light shadow-sm   text-content w-44 py-2 md:py-1 rounded-full md:rounded-none md:rounded-bl-full md:rounded-r-full text-sm h-full scale-110 md:scale-105"
                         onClick={handleSearch}
                     >
                         Search

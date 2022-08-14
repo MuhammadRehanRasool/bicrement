@@ -11,14 +11,14 @@ const PostComment = () => {
    
 
 
-      <div className=" rounded-t-lg rounded-r-lg  flex items-center p-4 justify-between">
+      <div className=" rounded-t-lg rounded-r-lg  flex flex-col md:flex-row items-center p-4 justify-between">
         {/* Image  */}
-        <div className="w-24 flex items-center justify-center">
+        <div className="md:w-24 flex items-center justify-center">
           <img src={commentBox} className=" " alt="" />
         </div>
 
         {/* Messages  */}
-        <div className="w-7/12 px-5">
+        <div className="md:w-7/12 px-5">
           <p className="">
             {" "}
             <span className="text-content text-xs font-semibold">
@@ -28,7 +28,7 @@ const PostComment = () => {
               Post dalela hain maine
             </span>{" "}
           </p>
-          <p className="border-l-[0.1rem] border-l-slate-400">
+          <p className="md:border-l-[0.1rem] md:border-l-slate-400">
             <span className="inline-block w-8 h-[0.1rem] bg-slate-400"></span>
             <span className="text-content text-[0.65rem] font-semibold">
               @menhihoshiyar:
@@ -38,7 +38,7 @@ const PostComment = () => {
             </span>{" "}
           </p>
 
-          <p className="border-l-[0.1rem] border-l-slate-400 ml-10">
+          <p className="md:border-l-[0.1rem] md:border-l-slate-400 ml-10">
             <span className="inline-block w-8 h-[0.1rem] bg-slate-400"></span>
             <span className="text-content text-[0.65rem] font-semibold">
               @mehshiyar:
@@ -48,7 +48,7 @@ const PostComment = () => {
             </span>{" "}
           </p>
 
-          <p className="border-l-[0.1rem] border-l-slate-400">
+          <p className="md:border-l-[0.1rem] md:border-l-slate-400">
             <span className="inline-block w-8 h-[0.1rem] bg-slate-400"></span>
             <span className="text-content text-[0.65rem] font-semibold">
               @mehshiyar:
@@ -60,8 +60,8 @@ const PostComment = () => {
         </div>
 
         {/* Like / Dislike  */}
-        <div className="border-l-2 border-l-yellows-light px-5 flex justify-evenly items-center space-x-4">
-          <div className="text-center space-y-2">
+        <div className="md:border-l-2 md:border-l-yellows-light px-5 flex justify-evenly items-center space-x-4">
+          <div className="text-center md:space-y-2">
             <img src={tickbox} alt="" className="w-5  mx-auto" />
             <p className="text-[0.65rem] text-grays-light">
               Verified <br /> Post
