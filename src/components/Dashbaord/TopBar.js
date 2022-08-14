@@ -32,7 +32,7 @@ const TopBar = () => {
                 </div>
 
                 <div
-                    className="border border-grays-light rounded-full shadow bg-white text-xs  flex items-center space-x-2  h-1/5"
+                    className="border border-grays-light rounded-full shadow bg-white text-xs  flex items-center space-x-2  h-1/5 pr-3"
                     onClick={() => setisSearch(true)}
                 >
                     <button

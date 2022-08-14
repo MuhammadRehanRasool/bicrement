@@ -16,7 +16,20 @@
   justify-content: center;
   align-content: center;
 }
-.fc-scroller{
-    overflow-x: auto!important;
-    overflow-y: auto!important;
+.fc-scroller {
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+.fc-col-header {
+  width: 100% !important;
+}
+
+.fc-daygrid-body.fc-daygrid-body-unbalanced.fc-daygrid-body-natural,
+.fc-scrollgrid-sync-table,
+.fc-timegrid-body ,.fc-timegrid-slotsm,.fc-timegrid-cols table,.fc-timegrid-slots table
+{
+  width: 100% !important;
+}
+.fc-timegrid-axis-cushion.fc-scrollgrid-shrink-cushion.fc-scrollgrid-sync-inner{
+  font-size: 0.6rem!important;
 }

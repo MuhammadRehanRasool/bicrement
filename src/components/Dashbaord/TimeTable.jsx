@@ -6,6 +6,7 @@ const TimeTable = () => {
     <FullCalendar
       plugins={[timeGridPlugin]}
       initialView="timeGridWeek"
+      className="w-full h-full"
       slotLabelFormat={{
         hour: "numeric",
         minute: "2-digit",
