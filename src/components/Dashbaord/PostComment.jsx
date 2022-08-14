@@ -1,5 +1,5 @@
 import React from "react";
-
+import {motion } from 'framer-motion'
 import commentBox from "../../Assets/images/messagbox.png";
 import like from "../../Assets/icons/like-thumb-up-outlined-symbol-svgrepo-com.svg";
 import unlike from "../../Assets/icons/like-thumb-down-outlined-symbol-svgrepo-com.svg";
@@ -11,7 +11,10 @@ const PostComment = () => {
    
 
 
-      <div className=" rounded-t-lg rounded-r-lg  flex flex-col md:flex-row items-center p-4 justify-between">
+      <motion.div initial={{ opacity: 0 ,y:100}}
+      animate={{ opacity: 1 ,y:0}}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6}}  className=" rounded-t-lg rounded-r-lg  flex flex-col md:flex-row items-center p-4 justify-between">
         {/* Image  */}
         <div className="md:w-24 flex items-center justify-center">
           <img src={commentBox} className=" " alt="" />
@@ -72,7 +75,7 @@ const PostComment = () => {
             <img src={unlike} alt="" className="w-5" />
           </div>
         </div>
-      </div>
+      </motion.div>
 
   
 

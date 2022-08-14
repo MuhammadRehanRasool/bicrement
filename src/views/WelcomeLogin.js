@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import {motion} from 'framer-motion'
 import avatar_1 from "../Assets/avatars/avatar-5.svg";
 
 const WelcomeLogin = () => {
@@ -41,7 +41,10 @@ const WelcomeLogin = () => {
             </h1>
           </span>
         </div>
-        <div className="flex flex-col md:flex-row justify-between">
+        <motion.div initial={{ opacity: 0, y:100 }}
+      animate={{ opacity: 1, y:0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }} className="flex flex-col md:flex-row justify-between">
           <div className="md:w-7/12">
             <div className="flex justify-center items-center h-full">
               {/* Singup Info */}
@@ -111,7 +114,7 @@ const WelcomeLogin = () => {
               Enter
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

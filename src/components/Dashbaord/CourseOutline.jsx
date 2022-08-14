@@ -3,7 +3,7 @@ import playBtn from '../../Assets/icons/play-button-svgrepo-com.svg'
 import assignments from '../../Assets/icons/class-notes-svgrepo-com.svg'
 import notebook from '../../Assets/icons/notes-note-svgrepo-com.svg'
 import tasks from '../../Assets/icons/notes-push-pin-svgrepo-com (1).svg'
-
+import {motion} from 'framer-motion'
 
 const CourseOutline = () => {
   const ColoredLine = ({ color }) => (
@@ -17,7 +17,10 @@ const CourseOutline = () => {
   );
 
   return (
-    <div className="mb-8 md:mt-1 md:mb-0">
+    <motion.div  initial={{ opacity: 0 ,y:100}}
+    animate={{ opacity: 1 ,y:0}}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.6}}  className="mb-8 md:mt-1 md:mb-0">
       <div className="flex items-center justify-between">
         <h1 className="text-xs w-auto text-content">Section 1: Introduction </h1>{" "}
         <ColoredLine />
@@ -67,7 +70,7 @@ const CourseOutline = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

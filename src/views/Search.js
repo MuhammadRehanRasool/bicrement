@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-
+import { motion } from "framer-motion";
 import icon_1 from "../Assets/icons/pencils-draw-svgrepo-com.png";
 import icon_2 from "../Assets/icons/test-tube.png";
 import icon_3 from "../Assets/icons/violin-svgrepo-com.png";
@@ -22,7 +22,12 @@ const Search = () => {
 
     const [isSearch, setisSearch] = useState(false);
     return (
-        <div className="flex flex-col items-start justify-between shadow-lg  rounded-b-2xl relative md:h-[33rem] xl:h-[calc(100vh-10rem)]">
+        <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.4 }}
+         className="flex flex-col items-start justify-between shadow-lg  rounded-b-2xl relative md:h-[33rem] xl:h-[calc(100vh-10rem)]">
             <div className="px-6 py-8 w-full md:h-44 flex justify-between items-center" >
 
             
@@ -77,7 +82,7 @@ const Search = () => {
             >
                 Explore
             </button>
-        </div>
+        </motion.div>
     );
 };
 

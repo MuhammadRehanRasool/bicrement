@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import {motion} from 'framer-motion'
 const LoginExplore = () => {
 
     const [form, setform] = useState({
@@ -56,7 +56,12 @@ const LoginExplore = () => {
                     </h1>
                 </span>
             </div>
-            <div className="px-6 py-8 w-full space-y-2">
+            <motion.div 
+           initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+         className="px-6 py-8 w-full space-y-2">
                 <div className="space-y-3">
                     <h1 className="text-xl text-dark">What is your name?</h1>
                     <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 md:w-9/12">
@@ -113,7 +118,7 @@ const LoginExplore = () => {
                         <Link to="/otp-verify">Next</Link>
                     </button>
                 </div>
-            </div>
+            </motion.div>
 
          
             <button
