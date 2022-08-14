@@ -19,7 +19,7 @@ const ExploreCard = ({setisSearch,isSearch}) => {
                 <span className="text-greens-light">$5.99</span>
             </h1>
 
-            <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2" onClick={()=>setisSearch(true)}>
+            <div className="border border-grays-light rounded-full w-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2" onClick={()=>setisSearch(true)}>
                 <input
                     type="text"
                     name=""

@@ -17,7 +17,7 @@ const ContactUs = () => {
 
         <div
           onClick={() => handleRoute()}
-          className="text-center cursor-pointer float-right "
+          className="cursor-pointer flex justify-end w-100"
         >
           <AiOutlineClose className="text-2xl text-grays-light" />
         </div>
@@ -28,7 +28,7 @@ const ContactUs = () => {
               {/* Account Info */}
 
               <div className="md:w-96 -mt-6">
-                <div className="px-6 py-8 w-80 mx-auto space-y-3 text-center">
+                <div className="px-2 py-8 md:w-80 mx-auto space-y-3 text-center">
                   <div className="space-y-3 ">
                     <h1 className="text-lg text-content">What is your name?</h1>
                     <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2 mx-auto">
@@ -78,27 +78,27 @@ const ContactUs = () => {
             <div className="flex justify-center items-center h-full space-y-8">
               {/* Singup Info */}
 
-              <div className="px-6 py-8  space-y-8 text-center flex flex-col items-center justify-center ">
-                <div className="space-y-2">
+              <div className="px-2 py-8  space-y-8 text-center flex flex-col items-center justify-center ">
+                <div className="space-y-2 w-full ">
                   <h1 className="text-lg text-content">Subject:</h1>
                   <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center space-x-2  mx-auto">
                     <input
                       type="text"
                       name=""
                       id=""
-                      className="outline-none bg-transparent w-80"
+                      className="outline-none bg-transparent w-full md:w-80"
                       placeholder=""
                     />
                   </div>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-2 w-full">
                   <h1 className="text-lg text-content">Message:</h1>
                   <div className="border border-grays-light rounded-[4rem] shadow bg-transparent text-xs p-6 flex items-center  mx-auto">
                     <textarea
                       type="Message"
                       name=""
                       id=""
-                      className="outline-none bg-transparent  w-80"
+                      className="outline-none bg-transparent  md:w-80"
                       placeholder=""
                       rows="8"
                       style={{
@@ -108,7 +108,7 @@ const ContactUs = () => {
                   </div>
                 </div>
 
-                <div className="space-x-8">
+                <div className="space-y-4 md:space-y-0 md:space-x-8 ">
                   <button className="bg-white text-content  py-3 border shadow p-8 text-sm font-semibold">
                     <Link to="#">I am not a robot</Link>
                   </button>
