@@ -93,7 +93,7 @@ const ContactUs = () => {
                 </div>
                 <div className="space-y-2">
                   <h1 className="text-lg text-content">Message:</h1>
-                  <div className="border border-grays-light rounded-full shadow bg-transparent text-xs px-3 py-2 flex items-center  mx-auto">
+                  <div className="border border-grays-light rounded-[4rem] shadow bg-transparent text-xs p-6 flex items-center  mx-auto">
                     <textarea
                       type="Message"
                       name=""

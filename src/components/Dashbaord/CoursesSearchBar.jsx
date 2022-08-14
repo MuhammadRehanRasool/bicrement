@@ -15,7 +15,7 @@ const CoursesSearchBar = ({children}) => {
     return (
         <div className="">
             <div
-                className="border border-grays-light rounded-full shadow bg-white text-xs  flex items-center space-x-2  h-10  w-full md:w-1/2"
+                className="border border-grays-light rounded-full shadow bg-white text-xs  flex items-center space-x-2  h-10  w-full md:w-1/2 pr-3"
                 onClick={() => setisSearch(true)}
             >
                 <button

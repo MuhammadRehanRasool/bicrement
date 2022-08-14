@@ -24,9 +24,9 @@ const NavbarPrimary = (props) => {
         </>
       ) : (
         <div className="flex-grow text-right space-x-3">
-          <Link to="#">
-            <span className="text-logo">Sign out</span>
-          </Link>
+          
+            <span className="text-logo cursor-pointer" onClick={()=>props.setIsLoggedIn(false)}>Sign out</span>
+          
         </div>
       )}
     </div>
