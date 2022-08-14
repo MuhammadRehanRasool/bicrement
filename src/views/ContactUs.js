@@ -98,7 +98,7 @@ const ContactUs = () => {
                       type="Message"
                       name=""
                       id=""
-                      className="outline-none bg-transparent  md:w-80"
+                      className="outline-none bg-transparent w-full  md:w-80"
                       placeholder=""
                       rows="8"
                       style={{
