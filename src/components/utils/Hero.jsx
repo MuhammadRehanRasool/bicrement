@@ -23,8 +23,8 @@ const Hero = ({ rightSection }) => {
         {/* Left Content Section  */}
         <div className="md:w-7/12 ">
           <div className="space-y-2 w-full">
-            <h1 className="text-7xl text-logo drop-shadow-xl">
-              myfort.<span className="text-yellows-dark">io</span>
+            <h1 className="text-7xl text-logo drop-shadow-lg">
+              myforte.<span className="text-yellows-dark">io</span>
             </h1>
             <p className="text-2xl drop-shadow-lg">
               {" "}
