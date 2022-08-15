@@ -24,11 +24,11 @@ const ExploreCard = ({setisSearch,isSearch}) => {
                     type="text"
                     name=""
                     id=""
-                    className="outline-none"
+                    className="outline-none cursor-pointer"
                     placeholder="What do you want to learn?"
                     onClick={handleSearch}
                 />
-                <IoIosSearch />
+                <IoIosSearch className="cursor-pointer"/>
             </div>
         </div>
     );

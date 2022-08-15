@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 const LoginExplore = () => {
   const [form, setform] = useState({
     name: "",
@@ -54,10 +54,10 @@ const LoginExplore = () => {
         </span>
       </div>
       <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.6 }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.6 }}
         className="px-6 py-8 w-full text-center md:text-left"
       >
         <div className="space-y-3">
