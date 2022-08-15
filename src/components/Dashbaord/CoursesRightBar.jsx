@@ -6,7 +6,7 @@ const CoursesRightBar = () => {
     return (
         <div className="w-full md:w-[30rem] space-y-10 mt-10 md:mt-0">
             <Notification />
-           <div className="md:h-56 overflow-hidden bg-gray-50 ">
+           <div className="md:h-56 overflow-hidden ">
            <TimeTable/>
            </div>
            
