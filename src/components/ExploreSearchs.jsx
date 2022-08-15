@@ -5,11 +5,11 @@ import { v4 as uuidv4 } from "uuid";
 import testTube from "../Assets/icons/test-tube.png";
 import Card1 from "./utils/Card1";
 import { motion } from "framer-motion";
-const ExploreSearch = () => {
+const ExploreSearch = ({setisSearch,isSearch }) => {
     const navigate = useNavigate();
 
     const handleRoute = () => {
-      navigate(-1);
+      setisSearch((prev)=>!prev)
     };
   
 

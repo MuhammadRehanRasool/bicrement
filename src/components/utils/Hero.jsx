@@ -42,7 +42,7 @@ const Hero = ({ rightSection }) => {
             <FacilitiesCard />
 
             {isSearch ? (
-              <ExploreSearch />
+              <ExploreSearch  setisSearch={setisSearch} isSearch={isSearch} />
             ) : (
               <ExploreCard setisSearch={setisSearch} isSearch={isSearch} />
             )}
